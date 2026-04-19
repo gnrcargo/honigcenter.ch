@@ -73,8 +73,8 @@ export default function RootLayout({
       <body>
         <header className="navbar glass-panel">
           <div className="container nav-content">
-            <div className="logo text-gradient">
-               Honigcenter
+            <div className="logo">
+              <img src="/logo.png" alt="Honigcenter Logo" style={{ height: '50px', width: 'auto' }} />
             </div>
             <nav className="nav-links">
               <a href="#">Home</a>

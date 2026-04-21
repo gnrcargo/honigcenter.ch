@@ -4,9 +4,9 @@ import "./globals.css";
 
 // Metadati ottimizzati per SEO e GEO (Generative Engine Optimization)
 export const metadata: Metadata = {
-  title: "Honigcenter | Miele Artigianale Premium Svizzero",
-  description: "Scopri il miglior miele e i prodotti dell'alveare di altissima qualità. Autentico oro liquido per il tuo benessere, curato con passione artigianale da Guner.",
-  keywords: ["miele svizzero", "miele premium", "vendita miele online", "honigcenter", "prodotti dell'alveare", "miele naturale biologico", "Guner miele"],
+  title: "Honigcenter | Premium Swiss Honey & Beehive Adoption",
+  description: "Scopri il miglior miele svizzero artigianale e adotta il tuo alveare in Ticino. Oro liquido 100% puro curato con passione da Mehmet.",
+  keywords: ["miele svizzero", "Schweizer Honig", "Swiss honey", "adotta un alveare", "Bienenpatenschaft", "miele premium", "vendita miele online", "honigcenter", "Mehmet miele", "Ticino honey"],
   alternates: {
     canonical: "https://honigcenter.ch",
   },
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Honigcenter | Miele Artigianale Premium",
-    description: "Autentico oro liquido. Scopri il miglior miele per la tua salute.",
+    title: "Honigcenter | Premium Swiss Honey",
+    description: "Autentico oro liquido. Adotta il tuo alveare nelle Alpi.",
     url: "https://honigcenter.ch",
     siteName: "Honigcenter",
     locale: "it_CH",
@@ -74,14 +74,16 @@ export default function RootLayout({
         <header className="navbar glass-panel">
           <div className="container nav-content">
             <div className="logo">
-              <img src="/logo.png" alt="Honigcenter Logo" style={{ height: '50px', width: 'auto' }} />
+              <a href="/">
+                <img src="/logo.png" alt="Honigcenter Logo" style={{ height: '50px', width: 'auto' }} />
+              </a>
             </div>
             <nav className="nav-links">
-              <a href="#">Home</a>
-              <a href="#prodotti">I Nostri Mieli</a>
-              <a href="#qualita">La Qualità</a>
+              <a href="/">Home</a>
+              <a href="#shop">Shop Online</a>
+              <a href="#adotta">Adotta un Alveare</a>
             </nav>
-            <button className="btn btn-primary btn-sm">Carrello (0)</button>
+            <a href="https://wa.me/41786571066" className="btn btn-primary btn-sm">Contattami</a>
           </div>
         </header>
         
@@ -90,25 +92,26 @@ export default function RootLayout({
         <footer className="footer">
           <div className="container footer-content">
             <div className="footer-brand">
-              <h3>Honigcenter</h3>
-              <p>L'autentico sapore dell'oro liquido, direttamente dalla natura alla tua tavola.</p>
+              <h3 style={{ color: 'var(--honey-gold)', fontSize: '2rem' }}>Honigcenter</h3>
+              <p>La vita alpina vera. Api, miele, Ticino. Esportiamo la purezza delle Alpi in tutta la Svizzera.</p>
             </div>
             <div className="footer-links">
               <h4>Acquista</h4>
-              <a href="#">Catalogo</a>
-              <a href="#">Offerte</a>
+              <a href="#shop">Catalogo Mieli</a>
+              <a href="#adotta">Adotta un Alveare</a>
             </div>
             <div className="footer-links">
-              <h4>Supporto</h4>
-              <a href="#">Spedizioni</a>
-              <a href="#contatti">Contatti</a>
+              <h4>Info</h4>
+              <a href="#qualita">Certificazioni</a>
+              <a href="https://wa.me/41786571066">WhatsApp Support</a>
             </div>
           </div>
           <div className="footer-bottom container">
-            <p>&copy; {new Date().getFullYear()} Honigcenter. Tutti i diritti riservati.</p>
+            <p>&copy; {new Date().getFullYear()} Honigcenter. Tutti i diritti riservati. Prodotto con passione a Losone, Ticino.</p>
           </div>
         </footer>
       </body>
     </html>
   );
 }
+

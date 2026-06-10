@@ -81,10 +81,12 @@ export default function RootLayout({
             <nav className="nav-links">
               <a href="/">Home</a>
               <a href="#shop">Shop Miele</a>
-              <a href="/ordina-uova">🥚 Uova Fresche</a>
               <a href="#adotta">Adotta un Alveare</a>
             </nav>
-            <a href="https://wa.me/41786571066" className="btn btn-primary btn-sm">Contattami</a>
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+              <a href="/ordina-uova" className="btn btn-sm" style={{ background: '#2D4A1E', color: '#F5F0E8', fontWeight: '700', border: '2px solid #C8922A' }}>🥚 Uova Fresche</a>
+              <a href="https://wa.me/41786571066" className="btn btn-primary btn-sm">Contattami</a>
+            </div>
           </div>
         </header>
         

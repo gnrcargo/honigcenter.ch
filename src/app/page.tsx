@@ -122,19 +122,38 @@ export default function Home() {
           </div>
         </section>
 
-        {/* UOVA FRESCHE BANNER */}
-        <section style={{ background: '#2D4A1E', padding: '40px 0' }}>
-          <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-              <span style={{ fontSize: '2.5rem' }}>🥚</span>
-              <div>
-                <p style={{ color: '#C8922A', fontWeight: '800', fontSize: '1.1rem', letterSpacing: '1px', textTransform: 'uppercase' }}>Novità — Uova Fresche dal Ticino</p>
-                <p style={{ color: '#F5F0E8', fontSize: '0.95rem', opacity: 0.85 }}>Galline allevate in piena libertà · Alimentazione naturale · Disponibili ora</p>
+        {/* UOVA FRESCHE — SEZIONE PRIMARIA */}
+        <section style={{ background: 'linear-gradient(135deg, #1a2e10 0%, #2D4A1E 60%, #3a5e28 100%)', padding: '100px 0', overflow: 'hidden', position: 'relative' }}>
+          <div style={{ position: 'absolute', top: '-80px', right: '-80px', width: '400px', height: '400px', borderRadius: '50%', background: 'rgba(200,146,42,0.08)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', bottom: '-60px', left: '-60px', width: '300px', height: '300px', borderRadius: '50%', background: 'rgba(200,146,42,0.06)', pointerEvents: 'none' }} />
+          <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '60px', alignItems: 'center' }}>
+            <div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(200,146,42,0.15)', border: '1px solid #C8922A', color: '#C8922A', padding: '6px 18px', borderRadius: '50px', fontSize: '0.82rem', fontWeight: '700', marginBottom: '28px', letterSpacing: '0.8px', textTransform: 'uppercase' as const }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#6BCB77', boxShadow: '0 0 8px #6BCB77', display: 'inline-block', flexShrink: 0 }} />
+                Disponibili ora · Ticino
               </div>
+              <h2 style={{ fontFamily: 'Playfair Display, serif', fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#F5F0E8', marginBottom: '20px', lineHeight: '1.15', fontWeight: '600' }}>
+                Le nostre <span style={{ color: '#C8922A' }}>Uova Fresche</span><br />direttamente dal pollaio
+              </h2>
+              <p style={{ fontSize: '1.1rem', color: 'rgba(245,240,232,0.80)', maxWidth: '520px', lineHeight: '1.75', marginBottom: '36px' }}>
+                Galline allevate in piena libertà sui prati ticinesi, alimentate in modo naturale. Ogni uovo è raccolto a mano e consegnato fresco, con tutto il sapore di una produzione locale.
+              </p>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' as const, marginBottom: '36px' }}>
+                {['🐓 Allevamento libero', '🌿 Alimentazione naturale', '🏔️ 100% Ticino'].map((tag, i) => (
+                  <span key={i} style={{ background: 'rgba(255,255,255,0.10)', color: '#F5F0E8', padding: '8px 16px', borderRadius: '50px', fontSize: '0.88rem', fontWeight: '600', border: '1px solid rgba(255,255,255,0.15)' }}>{tag}</span>
+                ))}
+              </div>
+              <a href="/ordina-uova" className="btn" style={{ background: '#C8922A', color: '#fff', padding: '18px 44px', fontSize: '1.1rem', fontWeight: '700', boxShadow: '0 10px 30px rgba(200,146,42,0.40)' }}>
+                Ordina le uova →
+              </a>
             </div>
-            <a href="/ordina-uova" className="btn" style={{ background: '#C8922A', color: '#fff', padding: '14px 32px', fontWeight: '700', whiteSpace: 'nowrap' }}>
-              Ordina le uova →
-            </a>
+            <div className="honey-float" style={{ opacity: 0.90 }}>
+              <svg width="160" height="200" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="90" cy="125" rx="72" ry="88" fill="#FFFDF7" stroke="#C8922A" strokeWidth="3" />
+                <ellipse cx="90" cy="125" rx="44" ry="54" fill="rgba(200,146,42,0.12)" />
+                <ellipse cx="66" cy="95" rx="12" ry="17" fill="white" opacity="0.5" transform="rotate(-20 66 95)" />
+              </svg>
+            </div>
           </div>
         </section>
 

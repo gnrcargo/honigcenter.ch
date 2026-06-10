@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large local video assets (raw/processed, not website assets)
+/videos/
+
+# vector database / knowledge base (generated, not source)
+/knowledge_base/
+
+# logs
+error.log

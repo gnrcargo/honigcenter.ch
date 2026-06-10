@@ -4,9 +4,9 @@ import "./globals.css";
 
 // Metadati ottimizzati per SEO e GEO (Generative Engine Optimization)
 export const metadata: Metadata = {
-  title: "Honigcenter | Premium Swiss Honey & Beehive Adoption",
-  description: "Scopri il miglior miele svizzero artigianale e adotta il tuo alveare in Ticino. Oro liquido 100% puro curato con passione da Mehmet.",
-  keywords: ["miele svizzero", "Schweizer Honig", "Swiss honey", "adotta un alveare", "Bienenpatenschaft", "miele premium", "vendita miele online", "honigcenter", "Mehmet miele", "Ticino honey"],
+  title: "Honigcenter | Luxury Artisanal Swiss Honey & Beehive Adoption",
+  description: "Experience the pure essence of the Alps. Premium, cold-extracted honey produced by Master Beekeeper Mehmet in Ticino. Exclusive beehive adoption program for a truly conscious lifestyle.",
+  keywords: ["Luxury Swiss Honey", "Artisanal Honey Ticino", "Pure Alpine Honey", "Beehive Adoption Switzerland", "Bienenpatenschaft Schweiz", "Premium Miele Ticinese", "Honigcenter Mehmet", "Organic Beekeeping Switzerland"],
   alternates: {
     canonical: "https://honigcenter.ch",
   },
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Honigcenter | Premium Swiss Honey",
-    description: "Autentico oro liquido. Adotta il tuo alveare nelle Alpi.",
+    title: "Honigcenter | Luxury Artisanal Swiss Honey",
+    description: "Cold-extracted, 100% pure honey from the heart of the Ticino Alps. Join our exclusive adoption program.",
     url: "https://honigcenter.ch",
-    siteName: "Honigcenter",
+    siteName: "Honigcenter Luxury",
     locale: "it_CH",
     type: "website",
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 800,
         height: 600,
-        alt: "Honigcenter Logo",
+        alt: "Honigcenter Luxury Honey",
       },
     ],
   },

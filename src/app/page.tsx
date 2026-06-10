@@ -45,7 +45,7 @@ export default function Home() {
       nameDe: "Premium Akazienhonig",
       desc: "Cristallino, dolce e delicato. Perfetto per dolcificare senza alterare i sapori.",
       price: "24.00",
-      img: "https://images.unsplash.com/photo-1587049352851-8d4e8e12ec68?auto=format&fit=crop&w=500&q=80"
+      img: "/images/honey_macro.png"
     },
     {
       id: "bosco",
@@ -106,16 +106,16 @@ export default function Home() {
                 <a href="#adotta" className="btn glass-panel" style={{ padding: '18px 40px', fontSize: '1.1rem', color: 'var(--ruby-red)' }}>Adotta un Alveare</a>
               </div>
             </div>
-            <div className="hero-image animate-fade-in delay-1">
+            <div className="hero-image animate-fade-in delay-1 honey-float">
               <div style={{ position: 'relative' }}>
                 <img 
-                  src="https://images.unsplash.com/photo-1587049352847-4d4b1ed7b258?auto=format&fit=crop&q=80&w=800" 
+                  src="/images/hero_premium.png" 
                   alt="Honigcenter Premium Swiss Honey" 
-                  style={{ width: '100%', borderRadius: '30px', boxShadow: 'var(--shadow-soft)', transform: 'rotate(2deg)' }}
+                  style={{ width: '100%', borderRadius: 'var(--border-radius-lg)', boxShadow: 'var(--shadow-premium)', transform: 'rotate(2deg)' }}
                 />
-                <div className="glass-panel" style={{ position: 'absolute', bottom: '-30px', left: '-30px', padding: '25px', width: '220px', transform: 'rotate(-5deg)' }}>
-                  <p style={{ fontWeight: '800', color: 'var(--ruby-red)', fontSize: '1.5rem' }}>100%</p>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Naturale & Artigianale del Ticino</p>
+                <div className="glass-panel" style={{ position: 'absolute', bottom: '-20px', left: '-20px', padding: '25px', width: '240px', transform: 'rotate(-5deg)', border: '1px solid var(--honey-gold)' }}>
+                  <p style={{ fontWeight: '800', color: 'var(--ruby-red)', fontSize: '1.8rem', lineHeight: '1' }}>100%</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>Puro Ticino</p>
                 </div>
               </div>
             </div>
@@ -126,8 +126,8 @@ export default function Home() {
         <section className="section-padding" style={{ background: '#fff' }}>
           <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div className="image-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-              <img src="https://images.unsplash.com/photo-1508500386229-cd9942d63200?auto=format&fit=crop&q=80&w=400" alt="Apiario" style={{ width: '100%', borderRadius: '15px' }} />
-              <img src="https://images.unsplash.com/photo-1558614848-5fd57ebfe507?auto=format&fit=crop&q=80&w=400" alt="Miele" style={{ width: '100%', borderRadius: '15px', marginTop: '40px' }} />
+              <img src="/images/beekeeper_passion.png" alt="Mehmet al lavoro" style={{ width: '100%', borderRadius: '15px', boxShadow: 'var(--shadow-soft)' }} />
+              <img src="/images/bee_macro.png" alt="Biodiversità Alpina" style={{ width: '100%', borderRadius: '15px', marginTop: '40px', boxShadow: 'var(--shadow-soft)' }} />
             </div>
             <div className="story-content">
               <h2 style={{ fontSize: '3rem', marginBottom: '30px' }}>La Storia dietro <span className="text-gradient">ogni goccia</span></h2>
@@ -141,6 +141,104 @@ export default function Home() {
                 <p style={{ fontStyle: 'italic', color: 'var(--ruby-dark)' }}>
                   "Il miele è la memoria dei fiori che hanno colorato le nostre montagne. Lo tratto con lo stesso rispetto con cui tratto la mia terra." — <strong>Mehmet</strong>
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* LIFESTYLE BREAKOUT - THE EMOTIONAL HOOK */}
+        <section className="section-padding" style={{ position: 'relative', minHeight: '600px', display: 'flex', alignItems: 'center', background: 'url(/images/lifestyle_breakfast.png) center/cover no-repeat fixed' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.7) 0%, transparent 100%)' }}></div>
+          <div className="container" style={{ position: 'relative', zIndex: 1, color: '#fff' }}>
+            <div style={{ maxWidth: '500px' }}>
+              <h2 style={{ fontSize: '3.5rem', marginBottom: '30px', color: 'var(--honey-gold)' }}>Un'Esperienza per i Sensi</h2>
+              <p style={{ fontSize: '1.3rem', lineHeight: '1.6', marginBottom: '40px' }}>
+                Trasforma ogni tua mattina in un momento di pura connessione con le Alpi. Il nostro miele non è solo un alimento, è il sapore della libertà e della natura incontaminata.
+              </p>
+              <a href="#shop" className="btn btn-primary" style={{ padding: '18px 45px' }}>Portalo sulla tua tavola</a>
+            </div>
+          </div>
+        </section>
+
+        {/* STRATEGIC AUTHORITY SECTION - THE 7-11-4 TRUST BUILDER */}
+        <section className="section-padding" style={{ background: 'var(--honey-light)', borderTop: '1px solid var(--honey-gold)', borderBottom: '1px solid var(--honey-gold)' }}>
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+              <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Il Nostro <span className="text-gradient">Metodo d'Eccellenza</span></h2>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '800px', margin: '0 auto' }}>
+                Non produciamo solo miele. Curiamo un ecosistema. Seguendo i principi della natura e dell'artigianalità svizzera, garantiamo uno standard superiore.
+              </p>
+            </div>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '40px' }}>
+              {[
+                { title: "1. Selezione Alpina", desc: "Scegliamo solo apiari sopra i 600m, dove l'aria è pura e la flora è incontaminata." },
+                { title: "2. Estrazione a Freddo", desc: "Il metodo di Mehmet preserva ogni enzima e profumo originale del fiore." },
+                { title: "3. Maturazione Lenta", desc: "Non forziamo i ritmi. Il miele riposa il tempo necessario per trovare il suo equilibrio." },
+                { title: "4. Edizione Limitata", desc: "Produciamo solo 1500kg all'anno. Ogni vasetto è numerato e tracciato." }
+              ].map((step, i) => (
+                <div key={i} className="glass-panel" style={{ padding: '30px', textAlign: 'center', border: '1px solid var(--honey-glow)' }}>
+                  <div style={{ fontSize: '2rem', marginBottom: '15px' }}>{i === 0 ? '🏔️' : i === 1 ? '🍯' : i === 2 ? '⏳' : '💎'}</div>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--ruby-red)' }}>{step.title}</h3>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* VIDEO SECTION - MOMENTI DALL'APIARIO (BALLERINA FARM STYLE) */}
+        <section className="section-padding" style={{ background: 'var(--bg-color)', overflow: 'hidden' }}>
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+              <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>Momenti dall'<span className="text-gradient">Apiario</span></h2>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>La purezza delle Alpi, catturata senza filtri.</p>
+            </div>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', justifyContent: 'center' }}>
+              {/* Video 1: Alpine Honey */}
+              <div className="glass-panel" style={{ padding: '15px', borderRadius: '30px', overflow: 'hidden', textAlign: 'center' }}>
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  style={{ width: '100%', borderRadius: '20px', boxShadow: 'var(--shadow-soft)' }}
+                >
+                  <source src="/videos/miele_alpino_branded.mp4" type="video/mp4" />
+                </video>
+                <p style={{ marginTop: '20px', fontWeight: '700', color: 'var(--ruby-dark)' }}>Pura Energia Alpina</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Il ritmo della natura ad alta quota</p>
+              </div>
+
+              {/* Video 2: Nature Rhythm */}
+              <div className="glass-panel" style={{ padding: '15px', borderRadius: '30px', overflow: 'hidden', textAlign: 'center' }}>
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  style={{ width: '100%', borderRadius: '20px', boxShadow: 'var(--shadow-soft)' }}
+                >
+                  <source src="/videos/packaging_branded.mp4" type="video/mp4" />
+                </video>
+                <p style={{ marginTop: '20px', fontWeight: '700', color: 'var(--ruby-dark)' }}>L'Arte del Tempo</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Ogni goccia è un capolavoro di pazienza</p>
+              </div>
+
+              {/* Video 3: Packaging Design */}
+              <div className="glass-panel" style={{ padding: '15px', borderRadius: '30px', overflow: 'hidden', textAlign: 'center' }}>
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  style={{ width: '100%', borderRadius: '20px', boxShadow: 'var(--shadow-soft)' }}
+                >
+                  <source src="/videos/packaging_branded.mp4" type="video/mp4" />
+                </video>
+                <p style={{ marginTop: '20px', fontWeight: '700', color: 'var(--ruby-dark)' }}>Design Esclusivo</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>L'eleganza racchiusa in un vasetto</p>
               </div>
             </div>
           </div>
@@ -183,6 +281,10 @@ export default function Home() {
                   Il modo più esclusivo per sostenere la natura e assicurarti il miglior miele per la tua famiglia. 
                   Scegli il tuo alveare, dalle un nome e ricevi tutto il suo miele a fine stagione (circa 10-15kg).
                 </p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px', background: 'rgba(255,255,255,0.1)', padding: '15px 25px', borderRadius: '50px', border: '1px solid var(--honey-gold)' }}>
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#25D366', boxShadow: '0 0 10px #25D366' }}></div>
+                  <span style={{ fontSize: '0.9rem', fontWeight: '600', letterSpacing: '1px' }}>SOLO 7 ALVEARI RIMASTI PER IL 2026</span>
+                </div>
                 <ul style={{ marginBottom: '40px', gap: '15px', display: 'flex', flexDirection: 'column', listStyle: 'none' }}>
                   <li>✅ 10-15kg di miele puro garantito</li>
                   <li>✅ Video aggiornamenti stagionali delle tue api</li>

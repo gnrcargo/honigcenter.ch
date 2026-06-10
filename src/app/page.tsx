@@ -53,7 +53,7 @@ export default function Home() {
       nameDe: "Waldhonig",
       desc: "Gusto intenso, ambrato scuro e ricco di sali minerali. Forza e natura pura.",
       price: "28.00",
-      img: "https://images.unsplash.com/photo-1614917997384-fd731eb18e24?auto=format&fit=crop&w=500&q=80"
+      img: "/images/honey_macro.png"
     },
     {
       id: "castagno",
@@ -61,7 +61,7 @@ export default function Home() {
       nameDe: "Kastanienhonig",
       desc: "Deciso e leggermente amarognolo. L'anima delle selve castanili ticinesi.",
       price: "26.00",
-      img: "https://images.unsplash.com/photo-1558614848-5fd57ebfe507?auto=format&fit=crop&w=500&q=80"
+      img: "/images/honey_macro.png"
     },
     {
       id: "millefiori",

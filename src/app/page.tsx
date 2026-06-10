@@ -45,7 +45,7 @@ export default function Home() {
       nameDe: "Premium Akazienhonig",
       desc: "Cristallino, dolce e delicato. Perfetto per dolcificare senza alterare i sapori.",
       price: "24.00",
-      img: "/images/honey_macro.png"
+      img: "/images/vasetti_miele.jpg"
     },
     {
       id: "bosco",
@@ -53,7 +53,7 @@ export default function Home() {
       nameDe: "Waldhonig",
       desc: "Gusto intenso, ambrato scuro e ricco di sali minerali. Forza e natura pura.",
       price: "28.00",
-      img: "/images/honey_macro.png"
+      img: "/images/vasetti_miele.jpg"
     },
     {
       id: "castagno",
@@ -61,7 +61,7 @@ export default function Home() {
       nameDe: "Kastanienhonig",
       desc: "Deciso e leggermente amarognolo. L'anima delle selve castanili ticinesi.",
       price: "26.00",
-      img: "/images/honey_macro.png"
+      img: "/images/vasetti_miele.jpg"
     },
     {
       id: "millefiori",
@@ -69,7 +69,7 @@ export default function Home() {
       nameDe: "Alpenblütenhonig",
       desc: "Un bouquet di profumi alpini in ogni vasetto. Ricco e aromatico.",
       price: "22.00",
-      img: "https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=500&q=80"
+      img: "/images/vasetti_miele.jpg"
     }
   ];
 
@@ -109,7 +109,7 @@ export default function Home() {
             <div className="hero-image animate-fade-in delay-1 honey-float">
               <div style={{ position: 'relative' }}>
                 <img 
-                  src="/images/hero_premium.png" 
+                  src="/images/vasetti_miele.jpg"
                   alt="Honigcenter Premium Swiss Honey" 
                   style={{ width: '100%', borderRadius: 'var(--border-radius-lg)', boxShadow: 'var(--shadow-premium)', transform: 'rotate(2deg)' }}
                 />
@@ -161,8 +161,8 @@ export default function Home() {
         <section className="section-padding" style={{ background: '#fff' }}>
           <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div className="image-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-              <img src="/images/beekeeper_passion.png" alt="Mehmet al lavoro" style={{ width: '100%', borderRadius: '15px', boxShadow: 'var(--shadow-soft)' }} />
-              <img src="/images/bee_macro.png" alt="Biodiversità Alpina" style={{ width: '100%', borderRadius: '15px', marginTop: '40px', boxShadow: 'var(--shadow-soft)' }} />
+              <img src="/images/apiario_natura.jpg" alt="Mehmet al lavoro nell'apiario" style={{ width: '100%', borderRadius: '15px', boxShadow: 'var(--shadow-soft)' }} />
+              <img src="/images/api_telaio.jpg" alt="Api sul telaio" style={{ width: '100%', borderRadius: '15px', marginTop: '40px', boxShadow: 'var(--shadow-soft)' }} />
             </div>
             <div className="story-content">
               <h2 style={{ fontSize: '3rem', marginBottom: '30px' }}>La Storia dietro <span className="text-gradient">ogni goccia</span></h2>
@@ -182,7 +182,7 @@ export default function Home() {
         </section>
 
         {/* LIFESTYLE BREAKOUT - THE EMOTIONAL HOOK */}
-        <section className="section-padding" style={{ position: 'relative', minHeight: '600px', display: 'flex', alignItems: 'center', background: 'url(/images/lifestyle_breakfast.png) center/cover no-repeat fixed' }}>
+        <section className="section-padding" style={{ position: 'relative', minHeight: '600px', display: 'flex', alignItems: 'center', background: 'url(/images/arnie_ticinesi.jpg) center/cover no-repeat fixed' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(90deg, rgba(0,0,0,0.7) 0%, transparent 100%)' }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 1, color: '#fff' }}>
             <div style={{ maxWidth: '500px' }}>

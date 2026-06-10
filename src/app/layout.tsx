@@ -75,7 +75,7 @@ export default function RootLayout({
           <div className="container nav-content">
             <div className="logo">
               <a href="/">
-                <img src="/logo.png" alt="Honigcenter Logo" style={{ height: '50px', width: 'auto' }} />
+                <img src="/images/logo_hd.jpg" alt="Honigcenter Logo" style={{ height: '55px', width: 'auto' }} />
               </a>
             </div>
             <nav className="nav-links">

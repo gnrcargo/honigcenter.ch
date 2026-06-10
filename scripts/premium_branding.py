@@ -26,13 +26,11 @@ def brand_video_premium(input_file, output_file, logo_file, font_file):
         f"colorbalance=rs=0.1:gs=0.05:bs=-0.05,unsharp=5:5:1.0:5:5:0.0[v];"
         f"[1:v]scale=250:-1[logo_scaled];"
         f"[v][logo_scaled]overlay=(main_w-overlay_w)/2:120[v_logo];"
-        f"[v_logo]drawtext=fontfile='{rel_font}':text='MIELE PURO NATURALE':"
-        f"fontsize=75:fontcolor=white:x=(w-text_w)/2:y=420:shadowcolor=black@0.8:shadowx=4:shadowy=4:"
-        f"alpha='if(lt(t,1),t,if(gt(t,{duration-2}),{duration}-t,1))'[v_text1];"
-        f"[v_text1]drawtext=fontfile='{rel_font}':text='LA TUA ENERGIA QUOTIDIANA':"
-        f"fontsize=60:fontcolor=orange:x=(w-text_w)/2:y=h-300:shadowcolor=black@0.8:shadowx=3:shadowy=3:"
-        f"alpha='if(lt(t,2),0,if(lt(t,3),t-2,if(gt(t,{duration-3}),{duration}-t-1,1)))'[v_final];"
-        f"[v_final]vignette=angle=0.1:aspect=9/16[vout]"
+        f"[v_logo]drawtext=fontfile='{rel_font}':text='PURA ENERGIA ALPINA':"
+        f"fontsize=80:fontcolor=white:y=450:shadowcolor=black@0.6:shadowx=4:shadowy=4:x=(w-text_w)/2,"
+        f"drawtext=fontfile='{rel_font}':text='DALL\\'ALVEARE E SENZA FILTRI':"
+        f"fontsize=60:fontcolor=white:y=h-400:shadowcolor=black@0.6:shadowx=3:shadowy=3:x=(w-text_w)/2,"
+        f"vignette=angle=0.08:aspect=9/16[vout]"
     )
 
     cmd = [
@@ -42,7 +40,7 @@ def brand_video_premium(input_file, output_file, logo_file, font_file):
         '-filter_complex', filter_complex,
         '-map', '[vout]',
         '-map', '0:a?',
-        '-c:v', 'libx264', '-preset', 'slow', '-crf', '18',
+        '-c:v', 'libx264', '-preset', 'medium', '-crf', '19',
         '-c:a', 'aac', '-b:a', '192k',
         output_file
     ]
@@ -63,14 +61,15 @@ if __name__ == "__main__":
     if not os.path.exists(PROCESSED_DIR):
         os.makedirs(PROCESSED_DIR)
 
-    # Process all videos in raw folder
-    for filename in os.listdir(RAW_DIR):
-        if filename.lower().endswith('.mp4'):
-            input_video = os.path.join(RAW_DIR, filename)
-            video_name = os.path.splitext(filename)[0]
-            output_video = os.path.join(PROCESSED_DIR, f"{video_name}_branded_{int(time.time())}.mp4")
-            
-            try:
-                brand_video_premium(input_video, output_video, logo, font)
-            except Exception as e:
-                print(f"Error processing {filename}: {e}")
+    # Process target video
+    target_file = "miele_alpino_comfy.mp4"
+    input_video = os.path.join(RAW_DIR, target_file)
+    
+    if os.path.exists(input_video):
+        output_video = os.path.join(PROCESSED_DIR, f"miele_alpino_premium_{int(time.time())}.mp4")
+        try:
+            brand_video_premium(input_video, output_video, logo, font)
+        except Exception as e:
+            print(f"Error processing {target_file}: {e}")
+    else:
+        print(f"Video {target_file} not found in raw directory.")

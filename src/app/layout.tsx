@@ -80,7 +80,8 @@ export default function RootLayout({
             </div>
             <nav className="nav-links">
               <a href="/">Home</a>
-              <a href="#shop">Shop Online</a>
+              <a href="#shop">Shop Miele</a>
+              <a href="/ordina-uova">🥚 Uova Fresche</a>
               <a href="#adotta">Adotta un Alveare</a>
             </nav>
             <a href="https://wa.me/41786571066" className="btn btn-primary btn-sm">Contattami</a>

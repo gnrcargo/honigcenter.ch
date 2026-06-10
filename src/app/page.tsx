@@ -122,6 +122,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* UOVA FRESCHE BANNER */}
+        <section style={{ background: '#2D4A1E', padding: '40px 0' }}>
+          <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+              <span style={{ fontSize: '2.5rem' }}>🥚</span>
+              <div>
+                <p style={{ color: '#C8922A', fontWeight: '800', fontSize: '1.1rem', letterSpacing: '1px', textTransform: 'uppercase' }}>Novità — Uova Fresche dal Ticino</p>
+                <p style={{ color: '#F5F0E8', fontSize: '0.95rem', opacity: 0.85 }}>Galline allevate in piena libertà · Alimentazione naturale · Disponibili ora</p>
+              </div>
+            </div>
+            <a href="/ordina-uova" className="btn" style={{ background: '#C8922A', color: '#fff', padding: '14px 32px', fontWeight: '700', whiteSpace: 'nowrap' }}>
+              Ordina le uova →
+            </a>
+          </div>
+        </section>
+
         {/* TRUST SECTION - THE "MEHMET" STORY (BERNAYS PRINCIPLE) */}
         <section className="section-padding" style={{ background: '#fff' }}>
           <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>

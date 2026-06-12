@@ -179,12 +179,12 @@ a {
   max-width: 1200px;
   z-index: 1000;
   padding: 15px 0;
-}
-.navbar:hover,
-.navbar.glass-panel:hover {
-  transform: translateX(-50%) !important;
-  background: rgba(255, 255, 255, 0.65) !important;
-  box-shadow: var(--shadow-soft) !important;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-soft);
 }
 .nav-content {
   display: flex;

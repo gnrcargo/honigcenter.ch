@@ -71,7 +71,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <header className="navbar glass-panel">
+        <header className="navbar">
           <div className="container nav-content">
             <div className="logo">
               <a href="/">

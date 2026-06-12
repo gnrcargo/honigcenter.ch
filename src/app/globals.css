@@ -180,6 +180,10 @@ a {
   z-index: 1000;
   padding: 15px 0;
 }
+.navbar:hover {
+  transform: translateX(-50%);
+  box-shadow: var(--shadow-soft);
+}
 .nav-content {
   display: flex;
   justify-content: space-between;

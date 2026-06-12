@@ -161,8 +161,8 @@ export default function Home() {
         <section className="section-padding" style={{ background: '#fff' }}>
           <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div className="image-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-              <img src="/images/apiario_natura.jpg" alt="Mehmet al lavoro nell'apiario" style={{ width: '100%', borderRadius: '15px', boxShadow: 'var(--shadow-soft)' }} />
-              <img src="/images/api_telaio.jpg" alt="Api sul telaio" style={{ width: '100%', borderRadius: '15px', marginTop: '40px', boxShadow: 'var(--shadow-soft)' }} />
+              <img src="/images/beekeeper_passion.png" alt="Mehmet al lavoro nell'apiario" style={{ width: '100%', borderRadius: '15px', boxShadow: 'var(--shadow-soft)' }} />
+              <img src="/images/bee_macro.png" alt="Api sul favo" style={{ width: '100%', borderRadius: '15px', marginTop: '40px', boxShadow: 'var(--shadow-soft)' }} />
             </div>
             <div className="story-content">
               <h2 style={{ fontSize: '3rem', marginBottom: '30px' }}>La Storia dietro <span className="text-gradient">ogni goccia</span></h2>

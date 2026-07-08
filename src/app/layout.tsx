@@ -110,7 +110,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="footer-bottom container">
-            <p>&copy; {new Date().getFullYear()} Honigcenter. Tutti i diritti riservati. Prodotto con passione a Losone, Ticino.</p>
+            <p>&copy; {new Date().getFullYear()} Honigcenter. Tutti i diritti riservati. Prodotto con passione a Canobbio, Ticino.</p>
           </div>
         </footer>
       </body>

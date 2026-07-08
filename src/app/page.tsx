@@ -14,15 +14,15 @@ export default function Home() {
     "telephone": "+41786571066",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Via Cantonale",
-      "addressLocality": "Losone",
-      "postalCode": "6616",
+      "streetAddress": "Via Circonvallazione 4",
+      "addressLocality": "Canobbio",
+      "postalCode": "6952",
       "addressCountry": "CH"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 46.1667,
-      "longitude": 8.7833
+      "latitude": 46.0361,
+      "longitude": 8.9639
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
